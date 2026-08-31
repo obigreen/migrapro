@@ -15,10 +15,7 @@
     .hero__subtitle {
         max-width: min(100%, 680px);
     }
-}
 
-@media screen and (max-width: 1440px) {
-    /* Hero */
     .hero__stage::before {
         width: min(48%, 680px);
     }
@@ -33,13 +30,13 @@
         max-width: none;
     }
 
+    .hero__card-button {
+        width: 100%;
+    }
+
     .hero__region {
         grid-column: 1 / -1;
         justify-content: flex-start;
-    }
-
-    .hero__card-button {
-        width: 100%;
     }
 }
 
