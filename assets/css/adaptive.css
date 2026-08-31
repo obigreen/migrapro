@@ -15,7 +15,10 @@
     .hero__subtitle {
         max-width: min(100%, 680px);
     }
+}
 
+@media screen and (max-width: 1399px) {
+    /* Hero */
     .hero__stage::before {
         width: min(48%, 680px);
     }
@@ -28,10 +31,6 @@
 
     .hero__card {
         max-width: none;
-    }
-
-    .hero__card-button {
-        width: 100%;
     }
 
     .hero__region {
@@ -369,7 +368,17 @@
         font-size: 16px;
     }
 
-    .header__bottom .navigation__item--services {
+    /* Keep the service list in the mobile drawer, after the main links. */
+    .header__bottom .navigation__list > .navigation__item--services {
+        display: block;
+        order: 2;
+    }
+
+    .header__bottom .navigation__list > .navigation__item:not(.navigation__item--services) {
+        order: 1;
+    }
+
+    .header__bottom .navigation__item--services > .navigation__submenu-toggle {
         display: none;
     }
 
