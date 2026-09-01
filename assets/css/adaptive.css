@@ -1,4 +1,4 @@
-@media screen and (max-width: 1599px) {
+@media screen and (max-width: 1602px) {
     /* Hero */
     .hero .container {
         padding-top: clamp(64px, 5.75vw, 92px);
@@ -15,10 +15,7 @@
     .hero__subtitle {
         max-width: min(100%, 680px);
     }
-}
 
-@media screen and (max-width: 1399px) {
-    /* Hero */
     .hero__stage::before {
         width: min(48%, 680px);
     }
@@ -36,6 +33,10 @@
     .hero__region {
         grid-column: 1 / -1;
         justify-content: flex-start;
+    }
+
+    .hero__card-button {
+        width: 100%;
     }
 }
 
@@ -502,7 +503,6 @@
     }
 
     .hero__card-button {
-        width: 100%;
         font-size: 17px;
     }
 
