@@ -1,0 +1,16 @@
+{
+  "name": "briefcube-wordpress-theme",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Interactive WordPress brief builder powered by Three.js.",
+  "scripts": {
+    "build": "esbuild src/briefcube-scene.js --bundle --minify --format=esm --target=es2020 --outfile=assets/js/briefcube-scene.js",
+    "watch": "npm run build -- --watch"
+  },
+  "dependencies": {
+    "three": "0.180.0"
+  },
+  "devDependencies": {
+    "esbuild": "0.25.10"
+  }
+}
